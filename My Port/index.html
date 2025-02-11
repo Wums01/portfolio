@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">ELIZABETH OBEBE</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!----------------- About me -------------------------->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hi, I'm a Software Developer</h2>
+      <p>A passionate software developer dedicated to creating efficient and user-friendly web solutions. With expertise in HTML, CSS, JavaScript, and Python. I bring ideas to life through clean and innovative code</p>
+      <button class="cta-button">View My Work</button>
+    </div>
+  </section>
+
+<!------------------- projects ----------------->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>A simple and visually appealing website for an ice cream shop, built using
+            HTML and CSS. It features a clean layout to showcase various ice cream flavors and their details.
+          </p>
+          <a class="links"     href="https://cart-brown-one.vercel.app/">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>A dynamic shopping cart application created using HTML, CSS and JavaScript.
+            It allows users to add, remove, and update items in real-time price calculation and a smooth user experience.
+          </p>
+          <a class="links" href="https://shopping-cart-beige-theta.vercel.app/" target="_blank">View Details</a>
+         
+        </div>
+
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>A brief description of the project.</p>
+          <a class="links" href="https://coldcreamy.vercel.app/">View Project</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!----------- CONTACT ME ------------->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="mail-to:obebe.elizabeth@gmail.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Elizabeth Obebe. All Rights Reserved.</p>
+    </div>
+    <div class="fav-1">
+
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fa-brands fa-linkedin fa-lg"></i>
+      </a>
+      <a href="https://www.github.com" target="_blank">
+        <i class="fa-brands fa-github fa-lg"></i>
+      </a>
+    </div>
+    
+    </footer>
+    
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

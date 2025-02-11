@@ -1,0 +1,204 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.header {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.links{
+  color: gray;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f4f4f9;
+}
+
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.projects {
+  padding: 2rem 1rem;
+}
+
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+
+.project-card {
+  background-color: #f4f4f9;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section */
+.contact {
+  padding: 2rem 1rem;
+  background-color: #f4f4f9;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* footer */
+.footer {
+  background-color: #1e1e2f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.fav-1 {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+a {
+  color: white;
+}
+
+
+/* Media queries for responsiveness  */
+@media (max-width: 1000px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  .cta-button {
+    font-size: 0.9rem;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .project-card {
+    padding: 0.8rem;
+  }
+  form {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  .nav a {
+    font-size: 1.2rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .cta-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .form-group {
+    margin-bottom: 0.8rem;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+}
