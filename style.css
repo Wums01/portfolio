@@ -1,204 +1,93 @@
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    :root {
+      --primary-color: #3E8E7E;
+      --secondary-color: #F7F9F9;
+      --accent-color: #F6C90E;
+      --dark-color: #1A1A1D;
+      --text-color: #333;
+    }
+
+    body {
+      scroll-behavior: smooth;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: var(--dark-color);
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #fff !important;
+    }
+
+    .hero-section {
+      padding: 100px 0;
+    }
+
+    .hero-img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn-accent {
+      background-color: var(--accent-color);
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background-color: #e6b800;
+      color: #000;
+    }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-
-.header {
-  background-color: #1e1e2f;
-  color: #fff;
-  padding: 1rem 0;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9fa; /* subtle background on hover */
 }
 
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+/* Icon Pulse Animation */
+.card-body i {
+  transition: transform 0.3s ease;
 }
 
-.links{
-  color: gray;
-}
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+.card:hover i {
+  transform: scale(1.2);
 }
 
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: #0056b3;
-}
-
-/* Hero section */
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: #f4f4f9;
-}
-
-
-.hero h2 {
-  font-size: 2.5rem;
-}
-
-
-.cta-button {
-  background-color: #007bff;
-  color: #fff;
+  .btn-accent {
+  background-color: #F6C90E;
+  color: #000;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
+}
+.btn-accent:hover {
+  background-color: #e6b800;
+  color: #000;
 }
 
-
-.projects {
-  padding: 2rem 1rem;
+.text-accent {
+  color: #F6C90E;
 }
 
-
-.projects h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-
-.project-card {
-  background-color: #f4f4f9;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact section */
-.contact {
-  padding: 2rem 1rem;
-  background-color: #f4f4f9;
-}
-
-.contact h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-/* footer */
-.footer {
-  background-color: #1e1e2f;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.fav-1 {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-a {
-  color: white;
-}
-
-
-/* Media queries for responsiveness  */
-@media (max-width: 1000px) {
-  .hero h2 {
-    font-size: 1.8rem;
-  }
-  .cta-button {
-    font-size: 0.9rem;
-  }
-  .nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .project-card {
-    padding: 0.8rem;
-  }
-  form {
-    width: 100%;
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 1000px) {
-  .logo {
-    font-size: 1.2rem;
-  }
-  .nav a {
-    font-size: 1.2rem;
-  }
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-  .cta-button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
-  }
-  .form-group {
-    margin-bottom: 0.8rem;
-  }
-  button {
-    font-size: 0.9rem;
-  }
+.footer a:hover {
+  color: #F6C90E;
+  transition: color 0.3s ease;
 }
