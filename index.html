@@ -37,7 +37,14 @@
         <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
           <h1 class="fw-bold">Hi, I'm Elizabeth Obebe</h1>
           <p class="lead">A passionate Full-Stack Developer & UI/UX Designer turning ideas into elegant, user-centered web experiences- from curiosity to c ode, this journey is mine.</p>
-          <a href="#projects" class="btn btn-accent mt-3">View My Work</a>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#projects" class="btn btn-accent">
+                <i class="fas fa-eye me-1"></i> View My Work
+              </a>
+              <a href="resume/Obebe_Elizabeth_Resume.pdf" target="_blank" class="btn btn-outline-dark">
+                <i class="fas fa-file-alt me-1"></i> View Resume
+              </a>
+            </div>
         </div>
         <div class="col-lg-6 text-center">
           <img src="img/Portfolio2.jpg" alt="Elizabeth Obebe" class="rounded shadow img-fluid shadow" style="max-width: 300px; height: auto;">
@@ -200,88 +207,117 @@
 
     <!-- Project Cards -->
     <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card shadow-sm h-100 border-0">
-          <div class="card-img-top bg-secondary-subtle text-center" style="height: 180px;">
-            <span class="text-muted d-flex justify-content-center align-items-center h-100">Shopping Cart Image</span>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <h5 class="card-title fw-bold">Shopping Cart App</h5>
-              <p class="card-text">A dynamic shopping cart app with real-time item updates, built using HTML, CSS, and JavaScript.</p>
-              <div class="mb-3">
-                <span class="badge bg-light text-dark border">HTML</span>
-                <span class="badge bg-light text-dark border">CSS</span>
-                <span class="badge bg-light text-dark border">JavaScript</span>
-              </div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="https://shopping-cart-beige-theta.vercel.app/" target="_blank" class="btn btn-sm btn-accent">
-                <i class="fas fa-eye me-1"></i> Live Demo
-              </a>
-              <a href="https://github.com/Wums01/Cart" target="_blank" class="btn btn-sm btn-outline-dark">
-                <i class="fas fa-code me-1"></i> Code
-              </a>
-            </div>
+
+  <!-- Project 1: Shopping Cart -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card shadow-sm h-100 border-0">
+      <img src="images/shopping-cart.jpg" alt="Shopping Cart App" class="card-img-top" style="height: 180px; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <div>
+          <h5 class="card-title fw-bold">Shopping Cart App</h5>
+          <p class="card-text">An interactive cart app with real-time item updates, quantity control, and price calculation using HTML, CSS, and JavaScript.</p>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark border">HTML</span>
+            <span class="badge bg-light text-dark border">CSS</span>
+            <span class="badge bg-light text-dark border">JavaScript</span>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card shadow-sm h-100 border-0">
-          <div class="card-img-top bg-secondary-subtle text-center" style="height: 180px;">
-            <span class="text-muted d-flex justify-content-center align-items-center h-100">Ice Cream Shop Image</span>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <h5 class="card-title fw-bold">Cold Creamy Website</h5>
-              <p class="card-text">A clean, responsive website for an ice cream shop, designed to showcase flavors and promos.</p>
-              <div class="mb-3">
-                <span class="badge bg-light text-dark border">HTML</span>
-                <span class="badge bg-light text-dark border">CSS</span>
-              </div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="https://coldcreamy.vercel.app/" target="_blank" class="btn btn-sm btn-accent">
-                <i class="fas fa-eye me-1"></i> Live Demo
-              </a>
-              <a href="https://github.com/Wums01/coldcreamy" target="_blank" class="btn btn-sm btn-outline-dark">
-                <i class="fas fa-code me-1"></i> Code
-              </a>
-            </div>
-          </div>
+        <div class="d-flex justify-content-between">
+          <a href="https://shopping-cart-beige-theta.vercel.app/" target="_blank" class="btn btn-sm btn-accent"><i class="fas fa-eye me-1"></i> Live Demo</a>
+          <a href="https://github.com/Wums01/Cart" target="_blank" class="btn btn-sm btn-outline-dark"><i class="fas fa-code me-1"></i> Code</a>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="col-md-6">
-        <div class="card shadow-sm h-100 border-0">
-          <div class="card-img-top bg-secondary-subtle text-center" style="height: 180px;">
-            <span class="text-muted d-flex justify-content-center align-items-center h-100">E-Commerce Image</span>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <h5 class="card-title fw-bold">E-Commerce Website</h5>
-              <p class="card-text">This e-commerce watch website was designed to provide a seamless shopping experience for users looking for stylish and high-quality timepieces.</p>
-              <div class="mb-3">
-                <span class="badge bg-light text-dark border">HTML</span>
-                <span class="badge bg-light text-dark border">CSS</span>
-              </div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="https://wums-watch.vercel.app/" target="_blank" class="btn btn-sm btn-accent">
-                <i class="fas fa-eye me-1"></i> Live Demo
-              </a>
-              <a href=" https://github.com/Wums01/Wums-Watch" target="_blank" class="btn btn-sm btn-outline-dark">
-                <i class="fas fa-code me-1"></i> Code
-              </a>
-            </div>
+  <!-- Project 2: Coldstone Creamy -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card shadow-sm h-100 border-0">
+      <img src="images/coldstone.jpg" alt="Coldstone Creamy Website" class="card-img-top" style="height: 180px; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <div>
+          <h5 class="card-title fw-bold">Coldstone Creamy</h5>
+          <p class="card-text">A visually delightful website for an ice cream brand showcasing flavor categories and product highlights with a clean layout.</p>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark border">HTML</span>
+            <span class="badge bg-light text-dark border">CSS</span>
           </div>
         </div>
+        <div class="d-flex justify-content-between">
+          <a href="https://coldcreamy.vercel.app/" target="_blank" class="btn btn-sm btn-accent"><i class="fas fa-eye me-1"></i> Live Demo</a>
+          <a href="https://coldcreamy.vercel.app/" target="_blank" class="btn btn-sm btn-outline-dark"><i class="fas fa-code me-1"></i> Code</a>
+        </div>
       </div>
+    </div>
+  </div>
 
+  <!-- Project 3: E-commerce Watch Website -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card shadow-sm h-100 border-0">
+      <img src="images/watch-ecommerce.jpg" alt="Watch E-commerce" class="card-img-top" style="height: 180px; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <div>
+          <h5 class="card-title fw-bold">Wums Watch (E-commerce)</h5>
+          <p class="card-text">An elegant online store for wristwatches featuring modern UI, product listings, and cart features using JavaScript and responsive design.</p>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark border">HTML</span>
+            <span class="badge bg-light text-dark border">CSS</span>
+            <span class="badge bg-light text-dark border">JavaScript</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <a href="https://wums-watch.vercel.app/" target="_blank" class="btn btn-sm btn-accent"><i class="fas fa-eye me-1"></i> Live Demo</a>
+          <a href="https://github.com/Wums01/Wums-Watch" target="_blank" class="btn btn-sm btn-outline-dark"><i class="fas fa-code me-1"></i> Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <!-- Add more projects   -->
+  <!-- Project 4: Estate Agency Website -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card shadow-sm h-100 border-0">
+      <img src="images/estate-agency.jpg" alt="Estate Agency Website" class="card-img-top" style="height: 180px; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <div>
+          <h5 class="card-title fw-bold">Real Estate Agency</h5>
+          <p class="card-text">A modern multi-page real estate site showcasing properties, agents, and services with an intuitive interface using Bootstrap and custom UI.</p>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark border">Bootstrap</span>
+            <span class="badge bg-light text-dark border">HTML</span>
+            <span class="badge bg-light text-dark border">CSS</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <a href="#" class="btn btn-sm btn-accent"><i class="fas fa-eye me-1"></i> Live Demo</a>
+          <a href="#" class="btn btn-sm btn-outline-dark"><i class="fas fa-code me-1"></i> Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      </div> <!-- end .row -->
+  <!-- Project 5: Agriculture Website -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card shadow-sm h-100 border-0">
+      <img src="images/agriculture.jpg" alt="Agriculture Website" class="card-img-top" style="height: 180px; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <div>
+          <h5 class="card-title fw-bold">AgriCulture</h5>
+          <p class="card-text">A clean, green-themed site promoting sustainable farming practices with sections for services, benefits, and contact — fully built with Bootstrap.</p>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark border">Bootstrap</span>
+            <span class="badge bg-light text-dark border">HTML</span>
+            <span class="badge bg-light text-dark border">CSS</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <a href="#" class="btn btn-sm btn-accent"><i class="fas fa-eye me-1"></i> Live Demo</a>
+          <a href="#" class="btn btn-sm btn-outline-dark"><i class="fas fa-code me-1"></i> Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
   </div> <!-- end .container -->
 </section>
 

@@ -37,6 +37,7 @@
     .btn-accent {
       background-color: var(--accent-color);
       color: #000;
+      border: none;
     }
 
     .btn-accent:hover {
